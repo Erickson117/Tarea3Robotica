@@ -10,8 +10,8 @@ def calcularXY(theta1,theta2):
   l1 = 1.3
   l2 = 0.8
   #Calcular X y Y
-  x = (l1*math.degrees(math.cos(theta1))) + (l2*math.degrees(math.cos(theta1 + theta2)))
-  y = (l1*math.degrees(math.sin(theta1))) + (l2*math.degrees(math.sin(theta1 + theta2)))
+  x = (l1*math.cos(math.radians(theta1))) + (l2*math.cos(math.radians(theta1 + theta2)))
+  y = (l1*math.sin(math.radians(theta1))) + (l2*math.sin(math.radians(theta1 + theta2)))
   return f"({x},{y})" #valor a regresar
 
 #Ingresar los angulos desde el teclado y comprobando que se metan numeros
